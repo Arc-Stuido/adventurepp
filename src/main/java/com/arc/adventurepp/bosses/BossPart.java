@@ -1,4 +1,4 @@
-package com.fho4565.adventurepp.bosses;
+package com.arc.adventurepp.bosses;
 
 import net.minecraft.world.entity.Entity;
 

@@ -1,4 +1,4 @@
-package com.fho4565.adventurepp;
+package com.arc.adventurepp;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
