@@ -1,6 +1,6 @@
 package com.arc.adventurepp.registry;
 
-import com.arc.adventurepp.Adventurepp;
+import com.arc.adventurepp.AdventurePP;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -14,7 +14,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 public class APPFeatures {
-    public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(Registries.FEATURE, Adventurepp.MODID);
+    public static final DeferredRegister<Feature<?>> FEATURES = DeferredRegister.create(Registries.FEATURE, AdventurePP.MOD_ID);
 
     public static <T extends Feature<?>> DeferredHolder<Feature<?>, T> register(final String name, final Supplier<T> sup) {
         return FEATURES.register(name, sup);

@@ -12,19 +12,17 @@ import org.slf4j.Logger;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-@Mod(Adventurepp.MODID)
-public class Adventurepp {
-    // Define mod id in a common place for everything to reference
-    public static final String MODID = "adventurepp";
-    // Directly reference a slf4j logger
+@Mod(AdventurePP.MOD_ID)
+public class AdventurePP {
+    public static final String MOD_ID = "adventurepp";
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final ResourceBundle LANGUAGE_RESOURCES = ResourceBundle.getBundle("lang", Locale.getDefault());
 
-    public Adventurepp(IEventBus modEventBus, ModContainer modContainer) {
+    public AdventurePP(IEventBus modEventBus, ModContainer modContainer) {
         APPFeatures.FEATURES.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.SERVER, Config.SPEC);
     }
     public static ResourceLocation of(String path){
-        return ResourceLocation.fromNamespaceAndPath(MODID,path);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID,path);
     }
 }

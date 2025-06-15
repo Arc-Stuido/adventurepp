@@ -1,6 +1,6 @@
 package com.arc.adventurepp.registry;
 
-import com.arc.adventurepp.Adventurepp;
+import com.arc.adventurepp.AdventurePP;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -19,7 +19,7 @@ public class APPPlacedFeature {
     }
 
     private static ResourceKey<PlacedFeature> createKey(final String name) {
-        return ResourceKey.create(Registries.PLACED_FEATURE, Adventurepp.of(name));
+        return ResourceKey.create(Registries.PLACED_FEATURE, AdventurePP.of(name));
     }
 
     public static Holder.Reference<PlacedFeature> register(final BootstrapContext<PlacedFeature> context, final ResourceKey<PlacedFeature> key, final ResourceKey<ConfiguredFeature<?, ?>> featureKey, final List<PlacementModifier> placement) {

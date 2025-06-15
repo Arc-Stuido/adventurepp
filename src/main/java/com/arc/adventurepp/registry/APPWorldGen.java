@@ -1,6 +1,6 @@
 package com.arc.adventurepp.registry;
 
-import com.arc.adventurepp.Adventurepp;
+import com.arc.adventurepp.AdventurePP;
 import net.minecraft.core.Cloner;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistryAccess;
@@ -21,6 +21,6 @@ public class APPWorldGen {
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> createKey(final String name) {
-        return ResourceKey.create(Registries.CONFIGURED_FEATURE, Adventurepp.of(name));
+        return ResourceKey.create(Registries.CONFIGURED_FEATURE, AdventurePP.of(name));
     }
 }
